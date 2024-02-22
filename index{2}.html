@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩越的文件</title>
+    <style>
+        body{
+            margin: 0;height:100vh;background-color:#eee ;
+        }
+        /*{
+            border:1px solid black
+        }*/
+        .yinying{
+            box-shadow:10px 5px 5px silver
+        }
+        .flex{
+            display:flex
+        }
+        .baise{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin:8px
+        }
+        .mgr8{
+            margin-right:8px
+        }
+        .mgt8{margin-top:8px}
+        .daohang{
+            padding:10px 20px ;
+            border-bottom: 1px solid rgb(191, 191, 191);
+            font-size: 14px;
+            color:#666
+        }
+        @media  (max-width:600px){
+        .ceBian{
+            display:none;}
+            .neiRong{flex-direction: column;}
+            .shujuqu{flex-direction: column;}
+            .youqu{margin-left: 8px;}
+            .shuju{margin: 0 0 8px;flex:auto}
+        }
+        
+    </style>
+</head>
+<body class="flex">
+  <!--侧边栏-->  
+  <div style="width:200px;z-index: 2;" class=" ceBian baise yinying">
+<!--touxiang-->
+<div style="padding:10px;align-items:center;justify-content: center;border-bottom: solid #999;" class="flex">
+    <img src="https://www.keaitupian.cn/cjpic/frombd/0/253/2522341468/3190828601.jpg" width="60px"height="60px"/>
+    <div style="margin-left: 15px;"><b>韩先生</b></div>
+</div>
+
+<!--daohang-->
+<div class="flex1">
+    <div class="daohang">导航</div>
+    <div class="daohang">主页</div>
+    <div class="daohang">设置</div>
+    <div class="daohang">动态</div>
+    <div class="daohang">荣誉</div>
+    <div class="daohang">帮助</div>
+</div>
+</div>
+  <!--主区域-->
+  <div class="flex1 flex column">
+    <!--头部烂-->
+    <div  style="height:55px;z-index: 1;text-align:cente;background-color:silver;padding:30px;font-size:30px" class="baise yinying">
+    您好！很高兴你能来访问我的网站！</div>
+    <!--内容区-->
+    <div style="overflow: auto;" class=" neiRong flex1 flex">
+        <!--左区-->
+        <div style="flex:3"; class="flex column mg8">
+            <!--shuju-->
+            <div class="flex shujuqu">
+                <div style="height:100px" class=" shuju flex1 baise mgr8 yinying yinying"></div>
+                <div style="height:100px" class=" shuju flex1 baise mgr8 yinying yinying"></div>
+                <div style="height:100px" class=" shuju flex1 baise mgr8 yinying yinying"></div>
+                <div style="height:100px" class=" shuju flex1 baise yinying yinying"></div>
+            </div>
+            <!--liebiao-->
+            <div class="flex column">
+                <div style="height:160px;margin:30px auto;text-align:center;font-size:19px；text-align:center" class="baise mgt8 yinying";>     <h3>作者简介</h3>
+                    <p>您好，我出生于07年9月22日，2020年于蔚县东关完小小学毕业，初中及高中于蔚县第一中学就读。热爱计算机及电气化，并有所研究。自高一开始便自己进行计算机编程方面的学习，并创建了第一个属于我的网页。</p></div>
+                <div style="height:160px;margin:30px auto;text-align:center;font-size:19px；text-align:center" class="baise mgt8 yinying";> <p>我的志向是<b>燕山大学</b>，这里之所以不用梦想是因为梦想往往是达不到的。而激励我前进的动力是我的自命不凡，因此，在学习和工作当中我总能展示出异于常人的<b>创新思维</b>和<b>实践能力</b>。受到大家爱戴。</p></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+            </div>
+        </div>
+         <!--右区-->
+         <div style="flex:1"; class=" youqu flex column mgr8 mgt8">
+        <!--tishiqu-->
+         <div style="height: 150px" class="baise yinying"></div>
+         <!--xiaoxiqu-->
+         <div style="height:300px" class="baise mgt8 yinying"></div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
