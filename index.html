@@ -1,40 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <style>  
-      body {
-        margin: 0;
-      }
-      .one{border-radius: 25px;
-    border: 2px solid #8AC007;
-    padding: 20px;
-    width: 1000px;
-    height: 1700px;border-width:5px;}
-    </style>
-  </head>
-  <body class="one">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>韩先生的个人网站</title>
-    <div style="text-align:center;hight:80px;background-color:green;padding:30px;font-size:30px">你好，我是韩越，很高兴你能来访问我的网站</div>
-    <div style="background-color:orange;text-align:center;padding:3px">
-      <img alt="韩先生" src="https://www.keaitupian.cn/cjpic/frombd/0/253/2522341468/3190828601.jpg" width="200px" height="200px">
-    </div>
-    <div style="height:1000px;width:1000px;background-color:rgb(202, 188, 191);padding:30px；max-width:760px;line-height:1.7;margin:30px auto;text-align:center;font-size:19px；">
-     <h3>作者简介</h3>
-      <p>您好，我出生于07年9月22日，2020年于蔚县东关完小小学毕业，初中及高中于蔚县第一中学就读。热爱计算机及电气化，并有所研究。自高一开始便自己进行计算机编程方面的学习，并创建了第一个属于我的网页。</p>
-      <p>我的志向是<b>燕山大学</b>，这里之所以不用梦想是因为梦想往往是达不到的。而激励我前进的动力是我的自命不凡，因此，在学习和工作当中我总能展示出异于常人的<b>创新思维</b>和<b>实践能力</b>。受到大家爱戴。</p>
+    <style>
+        body{
+            margin: 0;height:100vh;background-color:#eee ;
+        }
+        /*{
+            border:1px solid black
+        }*/
+        .yinying{
+            box-shadow:10px 5px 5px silver
+        }
+        .flex{
+            display:flex
+        }
+        .baise{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin:8px
+        }
+        .mgr8{
+            margin-right:8px
+        }
+        .mgt8{margin-top:8px}
+        .daohang{
+            padding:10px 20px ;
+            border-bottom: 1px solid rgb(191, 191, 191);
+            font-size: 14px;
+            color:#666
+        }
+        media  (max-width:600px){
+        .ceBian{
+            display:none;}
+            .neiRong{flex-direction: column;}
+            .shujuqu{flex-direction: column;}
+            .youqu{margin-left: 8px;}
+            .shuju{margin: 0 0 8px;flex:auto}
+        }
+        
+    </style>
+</head>
+<body class="flex">
+  <!--侧边栏-->  
+  <div style="width:200px;z-index: 2;" class=" ceBian baise yinying">
+<!--touxiang-->
+<div style="padding:10px;align-items:center;justify-content: center;border-bottom: solid #999;" class="flex">
+    <img src="https://www.keaitupian.cn/cjpic/frombd/0/253/2522341468/3190828601.jpg" width="60px"height="60px"/>
+    <div style="margin-left: 15px;"><b>韩先生</b></div>
+</div>
 
+<!--daohang-->
+<div class="flex1">
+    <div class="daohang">导航</div>
+    <div class="daohang">主页</div>
+    <div class="daohang">设置</div>
+    <div class="daohang">动态</div>
+    <div class="daohang">荣誉</div>
+    <div class="daohang">帮助</div>
+</div>
+</div>
+  <!--主区域-->
+  <div class="flex1 flex column">
+    <!--头部烂-->
+    <div  style="height:55px;z-index: 1;text-align:cente;background-color:silver;padding:30px;font-size:30px" class="baise yinying">
+    您好！很高兴你能来访问我的网站！</div>
+    <!--内容区-->
+    <div style="overflow: auto;" class=" neiRong flex1 flex">
+        <!--左区-->
+        <div style="flex:3"; class="flex column mg8">
+            <!--shuju-->
+            <div class="flex shujuqu">
+                <div style="height:100px;text-align:center" class=" shuju flex1 baise mgr8 yinying yinying"><img src="https://ts1.cn.mm.bing.net/th/id/R-C.bd3e2501c1275285aa20ed7f6ada814c?rik=aiL1L1z%2b1vI5Ag&riu=http%3a%2f%2fimg.aiimg.com%2fuploads%2fallimg%2f201214%2f263915-2012141F921.jpg&ehk=%2bxY%2bKQYfChGxPOUvJqvv57CGZVqelW289v4KaybknIk%3d&risl=&pid=ImgRaw&r=0" width="150px" height="100px"></div>
+                <div style="height:100px;text-align:center" class=" shuju flex1 baise mgr8 yinying yinying"><img src="https://img.tukuppt.com/png_preview/00/18/88/rfOzUOjHcY.jpg!/fw/780" width="150px" height="100px"></div>
+                <div style="height:100px;text-align:center" class=" shuju flex1 baise mgr8 yinying yinying"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.IftnPP7jNnxLoMcBDQho-QAAAA?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="150px" height="100px"></div>
+                <div style="height:100px;text-align:center" class=" shuju flex1 baise yinying yinying"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.cyteHFMVK4-wI36Y3j1hmAHaEw?w=202&h=130&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="150px" height="100px"></div>
+            </div>
+            <!--liebiao-->
+            <div class="flex column">
+                <div style="height:160px;margin:30px auto;text-align:center;font-size:19px；text-align:center" class="baise mgt8 yinying";>     <h3>作者简介</h3>
+                    <p>您好，我出生于07年9月22日，2020年于蔚县东关完小小学毕业，初中及高中于蔚县第一中学就读。热爱计算机及电气化，并有所研究。自高一开始便自己进行计算机编程方面的学习，并创建了第一个属于我的网页。</p></div>
+                <div style="height:160px;margin:30px auto;text-align:center;font-size:19px；text-align:center" class="baise mgt8 yinying";> <p>我的志向是<b>燕山大学</b>，这里之所以不用梦想是因为梦想往往是达不到的。而激励我前进的动力是我的自命不凡，因此，在学习和工作当中我总能展示出异于常人的<b>创新思维</b>和<b>实践能力</b>。受到大家爱戴。</p></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px" class="baise mgt8 yinying"></div>
+                <div style="height:160px;background-color:silver;text-align:center;padding:2px;font-size:20px" class="baise mgt8 yinying"><p>版权所有：hanyue.com</p>
+                    <a href="file:///C:/Users/Administrator/Desktop/https//hanyue.com"><p>韩的网站</p>
+                </a></div>
+            </div>
+        </div>
+         <!--右区-->
+         <div style="flex:1"; class=" youqu flex column mgr8 mgt8">
+        <!--tishiqu-->
+         <div style="height: 175px" class="baise yinying"><img src="https://www.bing.com/th/id/OGC.04b18f8c30c7086d6f644a99b8d3b689?pid=1.7&rurl=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20160331%2f8e718565d0114c619c8efdebe1025628_th.jpg&ehk=KFMLXc8ayBIidEXX7%2fJFQaVCU1TFrVLdBU2BtKbf0NM%3d" width="250px" height="175px"></div>
+         <!--xiaoxiqu-->
+         <div style="height:500px;font-size: 15px;" class="baise mgt8 yinying"><img src="https://img.zcool.cn/community/0160365c20fff4a8012029aca1c55b.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100" width="250px" height="450px"></div>
+        </div>
     </div>
-    <div style="height:30px;px;text-align:center;padding:40px;font-size:60px;margin:60px auto;color:red;">
-      健康开心每一天！
-    </div>
-    
-    <div style="background-color:silver;text-align:center;padding:2px;font-size:20px">
-      <p>版权所有:hanyue.com</p>
-      <a href="https://hanyue.com">韩先生的网站</p>
-    </div>
-    <div></div>
-  </body>
+  </div>
+</body>
 </html>
